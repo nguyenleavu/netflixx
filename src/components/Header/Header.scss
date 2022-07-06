@@ -1,0 +1,20 @@
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 4%;
+    height: 2.4rem;
+    z-index: 9;
+}
+
+.btn {
+    position: fixed;
+    top: 20px;
+    right: 2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    z-index: 9;
+}

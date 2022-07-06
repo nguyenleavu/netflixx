@@ -1,0 +1,116 @@
+.container {
+    position: relative;
+    color: white;
+    height: 16vw;
+}
+
+.container > h1 {
+    padding: 0.8rem 0;
+    font-size: 1.4vw;
+}
+
+.poster-list {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    transform: translateX(0px);
+    transition: all 1s ease;
+}
+
+.list-item {
+    width: 18vw;
+    margin-left: 0.2%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: rgb(0 0 0 / 75%) 0px 3px 15px;
+    &:hover {
+        position: relative;
+        top: -8vw;
+        width: 20vw;
+        height: 10vw;
+    }
+    &:hover .poster-info {
+        transition-delay: 1s;
+        display: block;
+        overflow-y: scroll;
+    }
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.hover {
+    transition-duration: 500ms;
+    transition-delay: 300ms, 200ms;
+}
+
+.poster-info {
+    display: none;
+    width: 100%;
+    height: 10vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 4px;
+    margin-top: -10px;
+    background-color: #181818;
+}
+
+.poster-icon {
+    font-size: 2vw;
+    text-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+    padding: 1vw;
+}
+
+.name-movie {
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: white;
+    text-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+}
+
+.vote {
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: white;
+    text-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+}
+
+.poster-icon > span {
+    margin-left: 2.6rem;
+}
+
+.left {
+    font-size: 3vw;
+    padding: 2.6vw 0.6vw;
+    position: absolute;
+    left: -44px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover {
+        transition-delay: 0.8ms;
+        border-radius: 4px;
+        background-color: rgba(22, 22, 22, 0.5);
+    }
+}
+
+.right {
+    font-size: 3vw;
+    padding: 2.6vw 0.6vw;
+    position: absolute;
+    margin-left: 94vw;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover {
+        transition-delay: 0.8ms;
+        border-radius: 4px;
+        background-color: rgba(22, 22, 22, 0.5);
+    }
+}
